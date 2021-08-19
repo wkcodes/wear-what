@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <Header title="Wearwhat"/>
-    <WearBox test=""/>
+    <WearBox v-bind:names='names'/>
     <Footer/>
   </main>
 </template>
@@ -20,8 +20,10 @@
       Footer,
       WearBox
     },
-    props: {
-        test: String
+    data () {
+        return {
+            names: ['abby','ben','carol']
+        }
     }
   };
 </script>
