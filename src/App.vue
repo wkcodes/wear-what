@@ -9,7 +9,8 @@ import Wrapper from './components/Wrapper.vue';
     name: 'App',
     components: {
       Wrapper,
-    }
+    },
+   
   };
 </script>
 

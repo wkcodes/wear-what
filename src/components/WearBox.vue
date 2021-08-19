@@ -1,15 +1,14 @@
-<!--button that toggles now, morning, afternoon, evening-->
 <template>
     <div>
-        <img src={{top}}>
+      <button>toggle time of day</button>
+      <img src="../../public/img/clothes/short_sleeve_shirt.png" alt="pants" width="150" height="150">
+      <h2>{{test}}</h2>
     </div>
 </template>
 
 <script>
   export default {
     name: 'WearBox',
-    components: {},
-    props: ['top']
   };
 </script>
 
