@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <Header title="Wearwhat"/>
+    <Header/>
     <WearBox v-bind:names='names'/>
     <Footer/>
   </main>
