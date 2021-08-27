@@ -1,7 +1,7 @@
 <template>
-  <main class="container">
+  <main>
     <Header/>
-    <WearBox v-bind:names='names'/>
+    <WearBox/>
     <Footer/>
   </main>
 </template>
@@ -20,16 +20,14 @@
     },
     data () {
         return {
-            names: ['abby','ben','carol']
+           
         }
     }
   };
 </script>
 
-<style scoped>
-    .container {
+<style>
+    main {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
     }
 </style>

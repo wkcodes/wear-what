@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <button>toggle time of day</button>
-      <img src="../../public/img/clothes/short_sleeve_shirt.png" alt="pants" width="150" height="150">
+      <img id="top" src="../../public/img/clothes/short_sleeve_shirt.png" alt="pants" width="150" height="150">
       <p>It's {{temp}} and {{weather}} in {{city}}</p>
     </div>
 </template>
@@ -35,9 +35,15 @@
 </script>
 
 <style scoped>
-    .container {
-      display: flex;
-      justify-content: center;
+    #top {
+      text-align: center;
     }
+    .container {
+      border: solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     
 </style>
