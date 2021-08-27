@@ -11,8 +11,6 @@
   import Footer from './Footer.vue';
   import WearBox from './WearBox.vue';
 
-  let testData = 'boy howdy';
-
   export default {
     name: 'Wrapper',
     components: {
