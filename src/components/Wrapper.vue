@@ -18,11 +18,6 @@
       Footer,
       WearBox
     },
-    data () {
-        return {
-           
-        }
-    }
   };
 </script>
 

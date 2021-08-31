@@ -1,9 +1,28 @@
 <template>
-    <div class="container">
-      <button>toggle time of day</button>
-      <img id="top" src="../../public/img/clothes/short_sleeve_shirt.png" alt="pants" width="150" height="150">
-      <p>It's {{temp}} and {{weather}} in {{city}}</p>
-    </div>
+  <div class="container">
+    <img
+      v-if="top === 'shirt'"
+      src="../../public/img/clothes/short_sleeve_shirt.png"
+      alt="pants"
+      width="150"
+      height="150"
+    />
+    <img
+      v-if="top == 'jacket'"
+      src="../../public/img/clothes/hoodie.png"
+      alt="pants"
+      width="150"
+      height="150"
+    />
+    <img
+      v-if="bottom == 'pants'"
+      src="../../public/img/clothes/pants.png"
+      alt="pants"
+      width="150"
+      height="150"
+    />
+    <p v-if="shoob === 'shoob'">shooby</p>
+  </div>
 </template>
 
 <script>
@@ -11,39 +30,45 @@
     name: 'WearBox',
     data() {
       return {
-        city: '',
-        weatherData: {},
-        temp: '',
-        weather: ''
-      }
-    }, 
-    async mounted() {
-      try{
-      fetch('https://api.openweathermap.org/data/2.5/weather?q=Seattle&units=imperial&appid=da643a7d6952012ad2356e9fe073f685')
-        .then(res => res.json())
-        .then(data => {
-          this.weatherData = data
-          this.city = data.name
-          this.temp = data.main.temp
-          this.weather = data.weather[0].main
-        })
-      }catch (err) {
-         throw err
-      }
-    }
+        top: '',
+        bottom: '',
+        shoob: 'ddfdd',
+      };
+    },
+    created() {
+      this.wearCalculator();
+    },
+    methods: {
+      wearCalculator() {
+        fetch(
+          'https://api.openweathermap.org/data/2.5/weather?q=Seattle&units=imperial&appid=da643a7d6952012ad2356e9fe073f685'
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.main.temp > 65) {
+              this.top = 'shirt';
+              this.bottom = 'shorts';
+            } else {
+              this.top = 'jacket';
+              this.bottom = 'pants';
+            }
+            if (data.weather[0].main == 'Clouds') {
+              // cloudy
+            }
+          });
+      },
+    },
   };
 </script>
 
 <style scoped>
-    #top {
-      text-align: center;
-    }
-    .container {
-      border: solid;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    
+  #top {
+    display: block;
+  }
+  .container {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 </style>
