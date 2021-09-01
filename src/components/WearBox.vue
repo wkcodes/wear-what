@@ -21,7 +21,6 @@
       width="150"
       height="150"
     />
-    <p v-if="shoob === 'shoob'">shooby</p>
   </div>
 </template>
 
@@ -31,8 +30,7 @@
     data() {
       return {
         top: '',
-        bottom: '',
-        shoob: 'ddfdd',
+        bottom: ''
       };
     },
     created() {

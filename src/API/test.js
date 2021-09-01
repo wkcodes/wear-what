@@ -1,0 +1,1 @@
+// see how i can fetch from outside the component 
