@@ -2,6 +2,7 @@
 node_modules
 /dist
 .notes.txt
+.test
 
 
 # local env files
