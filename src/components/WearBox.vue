@@ -21,6 +21,13 @@
       width="150"
       height="150"
     />
+    <img
+      v-if="bottom == 'shorts'"
+      src="../../public/img/clothes/shorts.png"
+      alt="pants"
+      width="150"
+      height="150"
+    />
   </div>
 </template>
 
@@ -30,7 +37,7 @@
     data() {
       return {
         top: '',
-        bottom: ''
+        bottom: '',
       };
     },
     created() {
@@ -64,9 +71,14 @@
     display: block;
   }
   .container {
+    padding: 25px;
     border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  img:hover {
+    transition: all 1s ease;
+    transform: translateY(-10%);
   }
 </style>

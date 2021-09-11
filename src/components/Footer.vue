@@ -1,5 +1,7 @@
 <template>
+  <main>
     <h1>Footer</h1>
+  </main>
 </template>
 
 <script>
@@ -9,6 +11,8 @@
   };
 </script>
 
-<style>
-    
+<style scoped>
+    main {
+      padding: 15px;
+    }
 </style>

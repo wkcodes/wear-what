@@ -22,7 +22,5 @@
 </script>
 
 <style>
-    main {
-        display: grid;
-    }
+    
 </style>
