@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Footer</h1>
+    <p>W.K Codes - 2021</p>
   </main>
 </template>
 
