@@ -13,6 +13,9 @@
 
 <style scoped>
     main {
+      background-color: linen;
       padding: 15px;
+      margin: 10px;
+      border-style: solid;
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Wearwhat</h1>
+    <h1>WearWhat</h1>
     <i class="far fa-user fa-lg"></i>
   </main>
 </template>
@@ -13,13 +13,18 @@
 
 <style scoped>
     h1 {
-        color:seagreen;
         margin-right: 30px;
     }
     main {
+        background-color: linen;
+        border-style: solid;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 15px;
+        margin: 10px;
+    }
+    i:hover{
+      cursor: pointer;
     }
 </style>

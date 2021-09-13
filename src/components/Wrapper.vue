@@ -22,5 +22,12 @@
 </script>
 
 <style>
-    
+    body {
+      background-color:peachpuff;
+    }  
+    main {
+      margin: 0 auto;
+      max-height: 100vh;
+      max-width: 50vh;
+    }
 </style>

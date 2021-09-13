@@ -1,34 +1,37 @@
 <template>
-  <div class="container">
-    <img
-      v-if="top === 'shirt'"
-      src="../../public/img/clothes/short_sleeve_shirt.png"
-      alt="pants"
-      width="150"
-      height="150"
-    />
-    <img
-      v-if="top == 'jacket'"
-      src="../../public/img/clothes/hoodie.png"
-      alt="pants"
-      width="150"
-      height="150"
-    />
-    <img
-      v-if="bottom == 'pants'"
-      src="../../public/img/clothes/pants.png"
-      alt="pants"
-      width="150"
-      height="150"
-    />
-    <img
-      v-if="bottom == 'shorts'"
-      src="../../public/img/clothes/shorts.png"
-      alt="pants"
-      width="150"
-      height="150"
-    />
-  </div>
+  <main>
+    <div class="container">
+      <img
+        v-if="top === 'shirt'"
+        src="../../public/img/clothes/short_sleeve_shirt.png"
+        alt="pants"
+        width="150"
+        height="150"
+      />
+      <img
+        v-if="top == 'jacket'"
+        src="../../public/img/clothes/hoodie.png"
+        alt="pants"
+        width="150"
+        height="150"
+      />
+      <img
+        v-if="bottom == 'pants'"
+        src="../../public/img/clothes/pants.png"
+        alt="pants"
+        width="150"
+        height="150"
+      />
+      <img
+        v-if="bottom == 'shorts'"
+        src="../../public/img/clothes/shorts.png"
+        alt="pants"
+        width="150"
+        height="150"
+      />
+      <p>It's a nice day in Seattle</p>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -67,11 +70,14 @@
 </script>
 
 <style scoped>
+  main {
+    background-color: linen;
+  }
   #top {
     display: block;
   }
   .container {
-    padding: 25px;
+    padding: 15px;
     border: solid;
     display: flex;
     flex-direction: column;
@@ -80,5 +86,10 @@
   img:hover {
     transition: all 1s ease;
     transform: translateY(-10%);
+  }
+  img {
+    margin: 5px;
+    transition: all 1s ease;
+    transform: translateY(10%);
   }
 </style>
