@@ -5,29 +5,29 @@
         v-if="top === 'shirt'"
         src="../../public/img/clothes/short_sleeve_shirt.png"
         alt="pants"
-        width="150"
-        height="150"
+        width="200"
+        height="200"
       />
       <img
         v-if="top == 'jacket'"
         src="../../public/img/clothes/hoodie.png"
         alt="pants"
-        width="150"
-        height="150"
+        width="200"
+        height="200"
       />
       <img
         v-if="bottom == 'pants'"
         src="../../public/img/clothes/pants.png"
         alt="pants"
-        width="150"
-        height="150"
+        width="200"
+        height="200"
       />
       <img
         v-if="bottom == 'shorts'"
         src="../../public/img/clothes/shorts.png"
         alt="pants"
-        width="150"
-        height="150"
+        width="200"
+        height="200"
       />
       <p>It's a nice day in Seattle</p>
     </div>
@@ -77,11 +77,13 @@
     display: block;
   }
   .container {
-    padding: 15px;
+    min-height: 40vh;
+    padding: 25px;
     border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   img:hover {
     transition: all 1s ease;
@@ -92,4 +94,10 @@
     transition: all 1s ease;
     transform: translateY(10%);
   }
+  @media screen and (max-width: 500px) {
+      .container{
+        height: 70vh;
+        padding: 2px;
+      }
+    }
 </style>

@@ -17,5 +17,8 @@
       padding: 15px;
       margin: 10px;
       border-style: solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 </style>
