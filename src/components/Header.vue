@@ -18,6 +18,7 @@
     main {
         background-color: linen;
         border-style: solid;
+        border-radius: 25px;
         display: flex;
         justify-content: center;
         align-items: center;

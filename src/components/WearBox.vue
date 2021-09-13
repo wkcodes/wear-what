@@ -71,12 +71,12 @@
 
 <style scoped>
   main {
-    background-color: linen;
   }
   #top {
     display: block;
   }
   .container {
+    background-color: linen;
     min-height: 40vh;
     padding: 25px;
     border: solid;
@@ -84,6 +84,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
   }
   img:hover {
     transition: all 1s ease;
@@ -94,10 +95,17 @@
     transition: all 1s ease;
     transform: translateY(10%);
   }
-  @media screen and (max-width: 500px) {
+  p {
+    padding: 5px;
+  }
+  @media screen and (max-width: 800px), (max-height: 700px){
       .container{
-        height: 70vh;
-        padding: 2px;
+        max-height: 65vh;
+        padding: 10px;
+      }
+      img {
+        height: 150px;
+        width: 150px;
       }
     }
 </style>

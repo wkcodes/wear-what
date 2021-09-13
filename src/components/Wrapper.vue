@@ -25,7 +25,7 @@
 
 <style>
     body {
-      background-color:peachpuff;
+      background-color:powderblue;
     }  
     main {
       margin: 0 auto;
@@ -34,10 +34,12 @@
     .container {
       margin: 0 auto;
       max-width: 40vw;
+      max-height: 70vh;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 800px) {
       .container{
-        max-width: 100vw;
+        max-width: 90vw;
+        max-height: 50vh;
       }
     }
 </style>
