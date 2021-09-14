@@ -13,7 +13,8 @@
 
 <style scoped>
     h1 {
-        margin-right: 1rem;
+        margin-right: 2vw;
+        font-size: 4vw;
     }
     main {
         background-color: linen;
@@ -26,12 +27,18 @@
         margin: 10px;
         height: 10vh;
     }
+    i{
+      font-size: 2vw;
+    }
     i:hover{
       cursor: pointer;
     }
-    @media screen and (max-width: 300px)  {
+    @media screen and (max-width: 300px), (max-height: 300px)  {
       h1{
-        font-size:20px
+        font-size: 6vw;
+      }
+      i{
+        font-size: 3vw;
       }
     }
 </style>

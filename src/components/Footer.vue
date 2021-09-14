@@ -21,5 +21,17 @@
       justify-content: center;
       align-items: center;
       border-radius: 25px;
+      max-height: 7vh;
+    }
+    p{
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 800px){
+      .main{
+        max-height: 2vh;
+      }
+      p{
+        font-size: 3vw;
+      }
     }
 </style>

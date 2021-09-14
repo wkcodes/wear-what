@@ -1,10 +1,8 @@
 <template>
   <main>
-    <div class="container">
     <Header/>
     <WearBox/>
     <Footer/>
-    </div>
   </main>
 </template>
 
@@ -29,18 +27,20 @@
     }  
     main {
       margin: 0 auto;
-
     }
     .container {
       margin: 0 auto;
       max-width: 40vw;
-      max-height: 70vh;
-      height: 100vh;
+      max-height: 100%;
+      height: 60vh;
     }
     @media screen and (max-width: 800px) {
       .container{
         max-width: 90vw;
-        max-height: 50vh;
+        max-height: 100%;
+      }
+      main {
+        height: 100%;
       }
     }
 </style>
