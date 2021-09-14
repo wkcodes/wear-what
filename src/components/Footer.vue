@@ -42,10 +42,10 @@
         margin: 10px auto;
       }
       p{
-        font-size: 3vw;
+        font-size: 6px;
       }
       i{
-        font-size: 3vw
+        font-size: 6px;
       }
     }
 </style>
