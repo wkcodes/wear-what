@@ -42,10 +42,10 @@
         margin: 10px auto;
       }
       p{
-        font-size: 6px;
+        font-size: 8px;
       }
       i{
-        font-size: 6px;
+        font-size: 8px;
       }
     }
 </style>
