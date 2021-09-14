@@ -13,7 +13,7 @@
 
 <style scoped>
     h1 {
-        margin-right: 30px;
+        margin-right: 1rem;
     }
     main {
         background-color: linen;

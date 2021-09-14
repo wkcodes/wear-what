@@ -104,8 +104,8 @@
         padding: 10px;
       }
       img {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
       }
     }
 </style>
