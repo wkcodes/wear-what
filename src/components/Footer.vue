@@ -16,25 +16,26 @@
       background-color: linen;
       padding: 15px;
       margin: 10px;
-      border-style: solid;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 25px;
-      max-height: 7vh;
-      width: 50vw;
+      height: 4vh;
+      width: 30vw;
       margin: 10px auto;
+      box-shadow: 0px 5px 5px;
     }
     p{
-      font-size: 1rem;
+      font-size: 1vw;
     }
     @media screen and (max-width: 300px), (max-height: 300px) {
       .main{
-        width: 50vw;
+        height: 3vh;
+        max-width: 40vw;
         margin: 10px auto;
       }
       p{
-        font-size: 3vw;
+        font-size: 1.5vw;
       }
     }
 </style>

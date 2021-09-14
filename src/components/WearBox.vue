@@ -29,7 +29,7 @@
         width="200"
         height="200"
       />
-      <p>It's a nice day in Seattle</p>
+      <p style="box">It's a nice day in Seattle</p>
     </div>
   </main>
 </template>
@@ -70,29 +70,24 @@
 </script>
 
 <style scoped>
-  main {
-  }
   #top {
     display: block;
   }
   .container {
-    max-width: 100%;
     background-color: linen;
-    padding: 15px;
-    border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    max-width: 65vw;
+    max-width: 50vw;
+    box-shadow: 0px 5px 5px;
   }
   img:hover {
     transition: all 0.5s ease;
     transform: translateY(-3%);
   }
   img {
-    padding-top: .2rem;
     transition: all 0.5s ease;
     transform: translateY(3%);
     max-height: 20vh;
@@ -101,7 +96,6 @@
   p {
     font-size: 2vw;
     padding-top:10px;
-    padding-bottom: 15x;
   }
   @media screen and (max-width: 800px), (max-height: 700px) {
     .container {

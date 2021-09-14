@@ -14,11 +14,10 @@
 <style scoped>
     h1 {
         margin-right: 2vw;
-        font-size: 4vw;
+        font-size: 5vw;
     }
     main {
         background-color: linen;
-        border-style: solid;
         border-radius: 25px;
         display: flex;
         justify-content: center;
@@ -26,7 +25,8 @@
         padding: 15px;
         margin: 10px auto;
         height: 10vh;
-        max-width: 50vw;
+        max-width: 40vw;
+        box-shadow: 0px 5px 5px;
     }
     i{
       font-size: 2.5vw;
