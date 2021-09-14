@@ -17,11 +17,11 @@ import Wrapper from './components/Wrapper.vue';
 <style>
   * {
     box-sizing: border-box;
+    text-decoration: none;
   } 
   #app {
     font-family: 'Bitter', serif;
     text-align: center;
     margin: 10px;
-    font-size: 16px;
   }
 </style>

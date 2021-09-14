@@ -1,7 +1,7 @@
 <template>
   <main>
     <p>W.K Codes - 2021</p>
-    <i class="fab fa-github"></i>
+    <a href="https://github.com/wkcodes/wear-what"><i class="fab fa-github"></i></a>
   </main>
 </template>
 
@@ -30,7 +30,7 @@
       font-size: 1vw;
     }
     i{
-      font-size: 1vw;
+      font-size: 1.5vw;
       margin-left: 1vw;
       display: block;
     }
@@ -42,10 +42,10 @@
         margin: 10px auto;
       }
       p{
-        font-size: 2vw;
+        font-size: 3vw;
       }
       i{
-        font-size: 2vw
+        font-size: 3vw
       }
     }
 </style>

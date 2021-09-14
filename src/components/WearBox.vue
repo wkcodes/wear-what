@@ -90,6 +90,7 @@
   img {
     transition: all 0.5s ease;
     transform: translateY(3%);
+    padding-top: 1vh;
     max-height: 20vh;
     max-width: 20vh;
   }
