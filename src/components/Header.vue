@@ -29,4 +29,9 @@
     i:hover{
       cursor: pointer;
     }
+    @media screen and (max-width: 300px)  {
+      h1{
+        font-size:20px
+      }
+    }
 </style>

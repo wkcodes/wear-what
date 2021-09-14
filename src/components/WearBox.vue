@@ -101,11 +101,13 @@
       .container{
         max-height: 65vh;
       }
-      img {
+    }
+  @media screen and (max-width: 500px), (max-height: 300px){
+    img {
         height: 100px;
         width: 100px;
         max-height: 100%;
         max-width: 100%;
       }
-    }
+  }
 </style>
