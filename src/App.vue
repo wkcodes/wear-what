@@ -19,7 +19,7 @@ import Wrapper from './components/Wrapper.vue';
     box-sizing: border-box;
   } 
   #app {
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'Bitter', serif;
     text-align: center;
     margin: 10px;
     font-size: 16px;

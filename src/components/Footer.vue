@@ -1,6 +1,7 @@
 <template>
   <main>
     <p>W.K Codes - 2021</p>
+    <i class="fab fa-github"></i>
   </main>
 </template>
 
@@ -28,14 +29,23 @@
     p{
       font-size: 1vw;
     }
+    i{
+      font-size: 1vw;
+      margin-left: 1vw;
+      display: block;
+    }
     @media screen and (max-width: 300px), (max-height: 300px) {
       .main{
         height: 3vh;
-        max-width: 40vw;
+        width: 2vh;
+        max-width: 50vw;
         margin: 10px auto;
       }
       p{
-        font-size: 1.5vw;
+        font-size: 2vw;
+      }
+      i{
+        font-size: 2vw
       }
     }
 </style>
