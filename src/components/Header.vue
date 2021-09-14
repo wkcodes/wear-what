@@ -24,16 +24,21 @@
         justify-content: center;
         align-items: center;
         padding: 15px;
-        margin: 10px;
+        margin: 10px auto;
         height: 10vh;
+        max-width: 50vw;
     }
     i{
-      font-size: 2vw;
+      font-size: 2.5vw;
     }
     i:hover{
       cursor: pointer;
     }
     @media screen and (max-width: 300px), (max-height: 300px)  {
+      main {
+        width: 50vw;
+        margin: 10px auto;
+      }
       h1{
         font-size: 6vw;
       }

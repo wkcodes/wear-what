@@ -22,13 +22,16 @@
       align-items: center;
       border-radius: 25px;
       max-height: 7vh;
+      width: 50vw;
+      margin: 10px auto;
     }
     p{
       font-size: 1rem;
     }
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 300px), (max-height: 300px) {
       .main{
-        max-height: 2vh;
+        width: 50vw;
+        margin: 10px auto;
       }
       p{
         font-size: 3vw;

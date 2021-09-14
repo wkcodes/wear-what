@@ -78,21 +78,21 @@
   .container {
     max-width: 100%;
     background-color: linen;
-    padding: 20px;
+    padding: 15px;
     border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    max-width: 65vw;
   }
   img:hover {
     transition: all 0.5s ease;
     transform: translateY(-3%);
   }
   img {
-    margin: 5px;
-    padding-top: .5rem;
+    padding-top: .2rem;
     transition: all 0.5s ease;
     transform: translateY(3%);
     max-height: 20vh;
