@@ -1,6 +1,5 @@
 <template>
-  <Wrapper/>
-  <router-view></router-view>
+  <router-view/>
 </template>
 
 <script>

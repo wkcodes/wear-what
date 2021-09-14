@@ -29,12 +29,14 @@
         width="200"
         height="200"
       />
-      <p style="box">It's {{temp}} degrees and {{cloudy}} in Seattle.</p>
+      <p style="box">It's {{temp}} degrees and {{cloudy}} in {{city}}.</p>
     </div>
   </main>
 </template>
 
 <script>
+import Welcome from '../views/Welcome'
+
   export default {
     name: 'WearBox',
     data() {
@@ -42,7 +44,8 @@
         top: '',
         bottom: '',
         cloudy: '',
-        temp: ''
+        temp: '',
+        city: 'Seattle'
       };
     },
     created() {
@@ -51,13 +54,13 @@
     methods: {
       wearCalculator() {
         fetch(
-          'https://api.openweathermap.org/data/2.5/weather?q=Seattle&units=imperial&appid=da643a7d6952012ad2356e9fe073f685'
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&appid=da643a7d6952012ad2356e9fe073f685`
         )
           .then((res) => res.json())
           .then((data) => {
             console.log(data)
             //if (data.main())
-            if (data.main.temp > 65) {
+            if (data.main.temp > 70) {
               this.top = 'shirt';
               this.bottom = 'shorts';
             } else {
