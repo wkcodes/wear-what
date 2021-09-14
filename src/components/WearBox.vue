@@ -66,6 +66,8 @@
             }
             if (data.weather[0].main == 'Clouds') {
               this.cloudy = 'cloudy'
+            } else {
+              this.cloudy = 'clear'
             }
             this.temp = data.main.temp
           });
