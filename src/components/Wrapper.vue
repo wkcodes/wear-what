@@ -35,6 +35,7 @@
       margin: 0 auto;
       max-width: 40vw;
       max-height: 70vh;
+      height: 100vh;
     }
     @media screen and (max-width: 800px) {
       .container{

@@ -24,6 +24,7 @@
         align-items: center;
         padding: 15px;
         margin: 10px;
+        height: 10vh;
     }
     i:hover{
       cursor: pointer;

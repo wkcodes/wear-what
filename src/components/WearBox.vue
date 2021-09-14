@@ -77,8 +77,7 @@
   }
   .container {
     background-color: linen;
-    min-height: 40vh;
-    padding: 25px;
+    padding: 15px;
     border: solid;
     display: flex;
     flex-direction: column;
@@ -87,13 +86,13 @@
     border-radius: 25px;
   }
   img:hover {
-    transition: all 1s ease;
-    transform: translateY(-10%);
+    transition: all .5s ease;
+    transform: translateY(-3%);
   }
   img {
     margin: 5px;
-    transition: all 1s ease;
-    transform: translateY(10%);
+    transition: all .5s ease;
+    transform: translateY(3%);
   }
   p {
     padding: 5px;
@@ -101,11 +100,12 @@
   @media screen and (max-width: 800px), (max-height: 700px){
       .container{
         max-height: 65vh;
-        padding: 10px;
       }
       img {
         height: 100px;
         width: 100px;
+        max-height: 100%;
+        max-width: 100%;
       }
     }
 </style>
