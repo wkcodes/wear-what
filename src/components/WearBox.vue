@@ -29,7 +29,7 @@
         width="200"
         height="200"
       />
-      <p style="box">It's a nice day in Seattle</p>
+      <p style="box">It's {{temp}} degrees and {{cloudy}} in Seattle.</p>
     </div>
   </main>
 </template>
@@ -41,6 +41,8 @@
       return {
         top: '',
         bottom: '',
+        cloudy: '',
+        temp: ''
       };
     },
     created() {
@@ -53,6 +55,8 @@
         )
           .then((res) => res.json())
           .then((data) => {
+            console.log(data)
+            //if (data.main())
             if (data.main.temp > 65) {
               this.top = 'shirt';
               this.bottom = 'shorts';
@@ -61,8 +65,9 @@
               this.bottom = 'pants';
             }
             if (data.weather[0].main == 'Clouds') {
-              // cloudy
+              this.cloudy = 'cloudy'
             }
+            this.temp = data.main.temp
           });
       },
     },
