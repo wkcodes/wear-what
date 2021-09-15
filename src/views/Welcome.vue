@@ -1,14 +1,19 @@
 <template>
   <h1>Welcome</h1>
-  <input>
+  <Button/>
 </template>
 
 <script>
+import Button from '../components/Button.vue'
+
   export default {
     name: 'Welcome',
+    components: {
+        Button
+    },
     data() {
       return {
-        city: 'Dallas'
+        city: ''
       };
     },
   };

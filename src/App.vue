@@ -10,7 +10,11 @@ import Wrapper from './components/Wrapper.vue';
     components: {
       Wrapper,
     },
-   
+    data() {
+      return {
+        city: []
+      }
+    } 
   };
 </script>
 
