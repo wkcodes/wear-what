@@ -1,9 +1,9 @@
 <template>
-  <router-view/>
+  <Wrapper />
 </template>
 
 <script>
-import Wrapper from './components/Wrapper.vue';
+  import Wrapper from './components/Wrapper.vue';
 
   export default {
     name: 'App',
@@ -12,9 +12,9 @@ import Wrapper from './components/Wrapper.vue';
     },
     data() {
       return {
-        city: []
-      }
-    } 
+        city: [],
+      };
+    },
   };
 </script>
 
@@ -22,7 +22,7 @@ import Wrapper from './components/Wrapper.vue';
   * {
     box-sizing: border-box;
     text-decoration: none;
-  } 
+  }
   #app {
     font-family: 'Bitter', serif;
     text-align: center;

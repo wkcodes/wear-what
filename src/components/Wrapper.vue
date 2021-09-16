@@ -2,6 +2,7 @@
   <main>
     <Header />
     <WearBox />
+    <WelcomeBox @submit-city="getCity" />
     <Footer />
   </main>
 </template>
@@ -10,7 +11,7 @@
   import Header from './Header.vue';
   import Footer from './Footer.vue';
   import WearBox from './WearBox.vue';
-  import Welcome from '../views/Welcome.vue';
+  import WelcomeBox from './WelcomeBox.vue';
 
   export default {
     name: 'Wrapper',
@@ -18,8 +19,20 @@
       Header,
       Footer,
       WearBox,
-      Welcome,
-    }
+      WelcomeBox,
+    },
+    methods: {
+      getCity: function(params) {
+        this.city = params;
+        console.log(this.city);
+      },
+    },
+    created() {},
+    data() {
+      return {
+        city: '',
+      };
+    },
   };
 </script>
 

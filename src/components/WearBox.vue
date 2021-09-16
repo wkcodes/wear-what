@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import Welcome from '../views/Welcome'
 
   export default {
     name: 'WearBox',

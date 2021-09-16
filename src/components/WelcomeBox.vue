@@ -1,13 +1,12 @@
 <template>
-  <a href="">
+  <h1>Welcome!</h1>
     <button @click="onClick()">Submit City</button>
-  </a>
   <input v-model="city" placeholder="Paris" />
 </template>
 
 <script>
   export default {
-    name: 'Button',
+    name: 'WelcomeBox',
     data() {
       return {
         city: '',
@@ -17,6 +16,7 @@
       onClick() {
         console.log('click');
         this.$emit('submit-city', this.city);
+        this.$emit('toggle', this.toggle)
         console.log(this.city);
       },
     },
