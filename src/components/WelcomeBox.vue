@@ -1,10 +1,13 @@
 <template>
-<div class="container">
-  <h1>Welcome!</h1>
-  <p>This is WearWhat a web-app that help you determine what you want to wear at the moment.</p>
-  <button @click="onClick()">Submit City</button>
-  <input v-model="city" placeholder="Paris" />
-</div>
+  <div class="container">
+    <h1>Welcome!</h1>
+    <p>
+      This is WearWhat, a web-app that helps you determine what you want to wear
+      at the moment. Enter your city below.
+    </p>
+    <input v-model="city" placeholder="Paris" />
+    <button @click="onClick()">Submit</button>
+  </div>
 </template>
 
 <script>
@@ -53,9 +56,25 @@
     max-height: 20vh;
     max-width: 20vh;
   }
+  h1 {
+    font-size: 2.5vw;
+  }
   p {
     font-size: 2vw;
-    padding-top:10px;
+  }
+  input {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+  button {
+    background-color: indianred;
+    border-radius: 20px;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin: 2vh;
   }
   @media screen and (max-width: 800px), (max-height: 700px) {
     .container {
@@ -70,13 +89,16 @@
       max-width: 17vh;
     }
     h1 {
-        font-size: 8vw;
+      font-size: 8vw;
     }
     p {
       font-size: 3vw;
     }
     button {
-        size: 3vw;
+      width: 25vw;
+    }
+    input {
+      width: 25vw;
     }
   }
 </style>

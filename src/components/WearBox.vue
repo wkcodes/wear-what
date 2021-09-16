@@ -30,6 +30,7 @@
         height="200"
       />
       <p style="box">It's {{temp}} degrees and {{cloudy}} in {{city}}.</p>
+      <button class="button">Reset</button>
     </div>
   </main>
 </template>
@@ -109,6 +110,16 @@
     font-size: 2vw;
     padding-top:10px;
   }
+  button {
+    background-color: indianred;
+    border-radius: 20px;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin-top: -1.5vh;
+  }
   @media screen and (max-width: 800px), (max-height: 700px) {
     .container {
       height: 50vh;
@@ -123,6 +134,11 @@
     }
     p {
       font-size: 3vw;
+    }
+    button {
+      width: 15vw;
+      padding-top: 1.5vh;
+      margin-bottom: 1.5vh;
     }
   }
 </style>
