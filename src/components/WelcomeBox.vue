@@ -22,10 +22,8 @@
     methods: {
       onClick() {
         this.toggle = true;
-        console.log('click');
         this.$emit('submit-city', this.city);
         this.$emit('toggle', this.toggle);
-        console.log(this.city);
       },
     },
   };

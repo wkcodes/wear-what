@@ -30,7 +30,7 @@
         height="200"
       />
       <p style="box">It's {{temp}} degrees and {{cloudy}} in {{city}}.</p>
-      <button class="button">Reset</button>
+      <button @click="onClick()" class="button">Reset</button>
     </div>
   </main>
 </template>
@@ -46,7 +46,8 @@
         bottom: '',
         cloudy: '',
         temp: '',
-        city: this.user__city
+        city: this.user__city,
+        toggle: true
       };
     },
     created() {
@@ -77,6 +78,11 @@
             this.temp = data.main.temp
           });
       },
+      onClick() {
+        console.log('reset clicked')
+        this.toggle = false
+        this.$emit('reset', this.toggle)
+      }
     },
   };
 </script>

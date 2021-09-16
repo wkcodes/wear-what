@@ -1,7 +1,7 @@
 <template>
   <main>
     <Header />
-    <WearBox v-if="toggle" v-bind:user__city="this.city"/>
+    <WearBox v-if="toggle" v-bind:user__city="this.city" @reset="resetWearBox"/>
     <WelcomeBox v-if="!toggle" @submit-city="getCity" />
     <Footer />
   </main>
@@ -31,6 +31,9 @@
         console.log(this.toggle);
         }
       },
+      resetWearBox: function(params) {
+        this.toggle = params
+      }
     },
     created() {
       if(this.toggle==true){
@@ -39,7 +42,7 @@
     },
     data() {
       return {
-        city: 'Toronto',
+        city: '',
         toggle: false,
       }
     },
