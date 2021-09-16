@@ -1,8 +1,8 @@
 <template>
   <main>
     <Header />
-    <WearBox />
-    <WelcomeBox @submit-city="getCity" />
+    <WearBox v-if="toggle" v-bind:user__city="this.city"/>
+    <WelcomeBox v-if="!toggle" @submit-city="getCity" />
     <Footer />
   </main>
 </template>
@@ -23,15 +23,25 @@
     },
     methods: {
       getCity: function(params) {
+        console.log(params)
         this.city = params;
+        this.toggle = params;
         console.log(this.city);
+        if(params.toggle === true){
+        console.log(this.toggle);
+        }
       },
     },
-    created() {},
+    created() {
+      if(this.toggle==true){
+        console.log('city')
+      }
+    },
     data() {
       return {
-        city: '',
-      };
+        city: 'Toronto',
+        toggle: false,
+      }
     },
   };
 </script>

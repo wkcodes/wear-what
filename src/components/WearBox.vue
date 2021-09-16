@@ -38,16 +38,18 @@
 
   export default {
     name: 'WearBox',
+    props: ['user__city'],
     data() {
       return {
         top: '',
         bottom: '',
         cloudy: '',
         temp: '',
-        city: 'Seattle'
+        city: this.user__city
       };
     },
     created() {
+      console.log('created')
       this.wearCalculator();
     },
     methods: {
