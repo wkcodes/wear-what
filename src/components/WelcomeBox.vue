@@ -40,8 +40,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    max-width: 50vw;
+    width: max-content;
     box-shadow: 0px 5px 5px;
+    padding: 1rem;
   }
   img:hover {
     transition: all 0.5s ease;
@@ -57,11 +58,8 @@
   h1 {
     font-size: 2.5vw;
   }
-  p {
-    font-size: 2vw;
-  }
   input {
-    font-size: 1.5vw;
+    font-size: 2rem;
     text-align: center;
   }
   button {
@@ -71,17 +69,19 @@
     padding: 0.5rem 0.5rem;
     text-align: center;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     margin: 2vh;
   }
   @media screen and (max-width: 800px), (max-height: 700px) {
     .container {
-      height: 50vh;
-      max-height: 70vh;
-      max-width: 65vw;
+      height: 100%;
+      width: 500px;
     }
   }
   @media screen and (max-width: 500px), (max-height: 300px) {
+    .container {
+      width: 900px;
+    }
     img {
       max-height: 17vh;
       max-width: 17vh;
@@ -90,13 +90,15 @@
       font-size: 8vw;
     }
     p {
-      font-size: 3vw;
+      font-size: 1.3rem;
     }
     button {
       width: 25vw;
+      font-size: 1rem;
     }
     input {
-      width: 25vw;
+      width: 30vw;
+      font-size: 1rem;
     }
   }
 </style>
