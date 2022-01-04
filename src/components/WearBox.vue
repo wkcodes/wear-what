@@ -29,14 +29,13 @@
         width="200"
         height="200"
       />
-      <p style="box">It's {{temp}} degrees and {{cloudy}} in {{city}}.</p>
+      <p style="box">It's {{ temp }} degrees and {{ cloudy }} in {{ city }}.</p>
       <button @click="onClick()" class="button">Reset</button>
     </div>
   </main>
 </template>
 
 <script>
-
   export default {
     name: 'WearBox',
     props: ['user__city'],
@@ -47,11 +46,11 @@
         cloudy: '',
         temp: '',
         city: this.user__city,
-        toggle: true
+        toggle: true,
       };
     },
     created() {
-      console.log('created')
+      console.log('created');
       this.wearCalculator();
     },
     methods: {
@@ -61,7 +60,7 @@
         )
           .then((res) => res.json())
           .then((data) => {
-            console.log(data)
+            console.log(data);
             //if (data.main())
             if (data.main.temp > 70) {
               this.top = 'shirt';
@@ -71,18 +70,18 @@
               this.bottom = 'pants';
             }
             if (data.weather[0].main == 'Clouds') {
-              this.cloudy = 'cloudy'
+              this.cloudy = 'cloudy';
             } else {
-              this.cloudy = 'clear'
+              this.cloudy = 'clear';
             }
-            this.temp = data.main.temp
+            this.temp = data.main.temp;
           });
       },
       onClick() {
-        console.log('reset clicked')
-        this.toggle = false
-        this.$emit('reset', this.toggle)
-      }
+        console.log('reset clicked');
+        this.toggle = false;
+        this.$emit('reset', this.toggle);
+      },
     },
   };
 </script>
@@ -99,7 +98,9 @@
     justify-content: center;
     border-radius: 20px;
     max-width: 50vw;
+    height: max-content;
     box-shadow: 0px 5px 5px;
+    padding: 2rem;
   }
   img:hover {
     transition: all 0.5s ease;
@@ -114,7 +115,7 @@
   }
   p {
     font-size: 2vw;
-    padding-top:10px;
+    padding-top: 10px;
   }
   button {
     background-color: indianred;
@@ -128,23 +129,24 @@
   }
   @media screen and (max-width: 800px), (max-height: 700px) {
     .container {
-      height: 50vh;
-      max-height: 70vh;
-      max-width: 65vw;
+      max-height: 100%;
+      max-width: 80%;
+      padding: 1.5rem;
     }
   }
   @media screen and (max-width: 500px), (max-height: 300px) {
     img {
-      max-height: 17vh;
-      max-width: 17vh;
+      max-height: 20vh;
+      max-width: 20vh;
+      padding-top: 0.5vh;
     }
     p {
-      font-size: 3vw;
+      font-size: 1.2rem;
     }
     button {
-      width: 15vw;
-      padding-top: 1.5vh;
-      margin-bottom: 1.5vh;
+      width: 40%;
+      padding: 0.3rem;
+      font-size: 0.8rem;
     }
   }
 </style>

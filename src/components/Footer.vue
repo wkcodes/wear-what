@@ -26,12 +26,14 @@
     margin: 10px auto;
     box-shadow: 0px 5px 5px;
     width: max-content;
+    height: 5vh;
+    max-height: 100%;
   }
   p {
     font-size: 1vw;
   }
   i {
-    font-size: 1.5vw;
+    font-size: 2rem;
     margin-left: 1vw;
     display: block;
   }
@@ -43,7 +45,8 @@
       font-size: 15px;
     }
     i {
-      font-size: 8px;
+      margin-left: 0.5rem;
+      font-size: 1rem;
     }
   }
 </style>

@@ -12,38 +12,38 @@
 </script>
 
 <style scoped>
-    h1 {
-        margin-right: 2vw;
-        font-size: 5vw;
-    }
+  h1 {
+    margin-right: 2vw;
+    font-size: 5rem;
+  }
+  main {
+    background-color: linen;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 10px auto;
+    height: 10vh;
+    max-width: 40%;
+    box-shadow: 0px 5px 5px;
+  }
+  i {
+    font-size: 2.5rem;
+  }
+  i:hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 500px), (max-height: 300px) {
     main {
-        background-color: linen;
-        border-radius: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        margin: 10px auto;
-        height: 10vh;
-        max-width: 40vw;
-        box-shadow: 0px 5px 5px;
+      max-width: 90%;
+      margin: 10px auto;
     }
-    i{
-      font-size: 2.5vw;
+    h1 {
+      font-size: 2rem;
     }
-    i:hover{
-      cursor: pointer;
+    i {
+      font-size: 1.3rem;
     }
-    @media screen and (max-width: 300px), (max-height: 300px)  {
-      main {
-        width: 50vw;
-        margin: 10px auto;
-      }
-      h1{
-        font-size: 6vw;
-      }
-      i{
-        font-size: 3vw;
-      }
-    }
+  }
 </style>
