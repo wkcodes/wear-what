@@ -149,4 +149,10 @@
       font-size: 0.8rem;
     }
   }
+  @media (max-width: 800px) and (min-width: 400px) {
+    p,
+    button {
+      font-size: 2rem;
+    }
+  }
 </style>
