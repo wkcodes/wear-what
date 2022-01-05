@@ -101,4 +101,9 @@
       font-size: 1rem;
     }
   }
+  @media (max-width: 800px) and (min-width: 400px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 </style>

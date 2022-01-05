@@ -13,7 +13,7 @@
 
 <style scoped>
   h1 {
-    margin-right: 2vw;
+    margin: 1rem;
     font-size: 5rem;
   }
   main {
@@ -25,7 +25,7 @@
     padding: 15px;
     margin: 10px auto;
     height: 10vh;
-    max-width: 40%;
+    max-width: fit-content;
     box-shadow: 0px 5px 5px;
   }
   i {
@@ -37,6 +37,7 @@
   @media screen and (max-width: 500px), (max-height: 300px) {
     main {
       max-width: 90%;
+      max-height: 100%;
       margin: 10px auto;
     }
     h1 {

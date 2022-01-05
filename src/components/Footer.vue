@@ -49,4 +49,10 @@
       font-size: 1rem;
     }
   }
+  @media (max-width: 800px) and (min-width: 400px) {
+    p,
+    i {
+      font-size: 1.5rem;
+    }
+  }
 </style>
