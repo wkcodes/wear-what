@@ -9,3 +9,4 @@ Possible future developements:
 
 - Create a user profile system for where users can create and store outfits
 
+Copyright 2022, Will Kendall(WK-CODES), All rights reserved.
