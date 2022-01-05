@@ -1,7 +1,11 @@
 # wear-what
+live: https://wear-what.netlify.app/
 
 A web-app that helps the user decide what clothing to wear.
 
-Deployed: https://confident-goldstine-d1ae01.netlify.app/
+Official release: 1/5/22
 
-_testt_
+Possible future developements:
+
+- Create a user profile system for where users can create and store outfits
+
